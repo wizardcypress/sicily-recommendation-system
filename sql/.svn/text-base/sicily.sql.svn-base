@@ -1,0 +1,382 @@
+-- phpMyAdmin SQL Dump
+-- version 3.4.3
+-- http://www.phpmyadmin.net
+--
+-- 主机: localhost
+-- 生成日期: 2011 年 11 月 27 日 00:27
+-- 服务器版本: 5.0.51
+-- PHP 版本: 5.3.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- 数据库: `sicily`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `contests`
+--
+
+DROP TABLE IF EXISTS `contests`;
+CREATE TABLE IF NOT EXISTS `contests` (
+  `cid` int(11) NOT NULL auto_increment,
+  `title` varchar(50) character set utf8 collate utf8_unicode_ci NOT NULL default '',
+  `starttime` datetime NOT NULL default '0000-00-00 00:00:00',
+  `during` varchar(20) NOT NULL default '05:00:00',
+  `freeze_during` int(10) NOT NULL default '0',
+  `perm` enum('admin','user','manager','temp') character set utf8 collate utf8_unicode_ci NOT NULL default 'user',
+  `ipbind` enum('free','bind') character set utf8 collate utf8_unicode_ci NOT NULL default 'free',
+  `authtype` enum('free','password','internal','bound') character set utf8 collate utf8_unicode_ci NOT NULL default 'free',
+  `pwd` varchar(20) character set utf8 collate utf8_unicode_ci NOT NULL,
+  `owner` int(11) NOT NULL,
+  `addrepos` tinyint(1) NOT NULL default '1',
+  `information` text NOT NULL,
+  `course_id` int(11) NOT NULL default '0',
+  `avail` int(11) NOT NULL default '1',
+  PRIMARY KEY  (`cid`),
+  KEY `addrepos` (`addrepos`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `contest_problems`
+--
+
+DROP TABLE IF EXISTS `contest_problems`;
+CREATE TABLE IF NOT EXISTS `contest_problems` (
+  `cpid` int(11) NOT NULL default '0',
+  `cid` int(11) NOT NULL default '0',
+  `pid` int(11) NOT NULL default '1000',
+  PRIMARY KEY  (`cpid`,`cid`),
+  KEY `cid` (`cid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `contest_status`
+--
+
+DROP TABLE IF EXISTS `contest_status`;
+CREATE TABLE IF NOT EXISTS `contest_status` (
+  `csid` int(11) NOT NULL auto_increment,
+  `cid` int(11) NOT NULL default '0',
+  `cpid` int(11) NOT NULL default '0',
+  `sid` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`csid`,`cid`),
+  KEY `cid` (`cid`),
+  KEY `sid` (`sid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `courses`
+--
+
+DROP TABLE IF EXISTS `courses`;
+CREATE TABLE IF NOT EXISTS `courses` (
+  `course_id` int(11) NOT NULL auto_increment,
+  `name` varchar(50) NOT NULL,
+  `teacher` varchar(50) NOT NULL,
+  `description` text NOT NULL,
+  `avail` int(11) NOT NULL default '1',
+  `owner` int(11) NOT NULL default '0',
+  `require_cinfo` tinyint(1) NOT NULL default '1',
+  `require_bound` tinyint(1) NOT NULL default '1',
+  PRIMARY KEY  (`course_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `course_reg`
+--
+
+DROP TABLE IF EXISTS `course_reg`;
+CREATE TABLE IF NOT EXISTS `course_reg` (
+  `course_id` int(11) NOT NULL,
+  `uid` int(11) NOT NULL,
+  PRIMARY KEY  (`course_id`,`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `judge`
+--
+
+DROP TABLE IF EXISTS `judge`;
+CREATE TABLE IF NOT EXISTS `judge` (
+  `id` int(11) NOT NULL auto_increment,
+  `username` varchar(20) character set utf8 collate utf8_unicode_ci NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `token` varchar(14) NOT NULL,
+  `lasttime` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `posts`
+--
+
+DROP TABLE IF EXISTS `posts`;
+CREATE TABLE IF NOT EXISTS `posts` (
+  `id` int(11) NOT NULL auto_increment,
+  `problem_id` int(11) NOT NULL,
+  `catalog` enum('Solution','Clarification','Question','General') NOT NULL default 'General',
+  `time` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  `user_id` int(11) NOT NULL,
+  `content` text NOT NULL,
+  `reply_id` int(11) NOT NULL default '0',
+  `useful` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`id`),
+  KEY `catalog` (`catalog`,`reply_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `post_rating`
+--
+
+DROP TABLE IF EXISTS `post_rating`;
+CREATE TABLE IF NOT EXISTS `post_rating` (
+  `id` int(11) NOT NULL auto_increment,
+  `post_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `problems`
+--
+
+DROP TABLE IF EXISTS `problems`;
+CREATE TABLE IF NOT EXISTS `problems` (
+  `pid` int(11) NOT NULL auto_increment,
+  `title` varchar(100) character set utf8 collate utf8_unicode_ci NOT NULL default '',
+  `time_limit` int(11) NOT NULL default '1',
+  `memory_limit` int(11) NOT NULL default '32768',
+  `description` text character set utf8 collate utf8_unicode_ci NOT NULL,
+  `input` text character set utf8 collate utf8_unicode_ci,
+  `output` text character set utf8 collate utf8_unicode_ci,
+  `sample_input` text character set utf8 collate utf8_unicode_ci NOT NULL,
+  `sample_output` text character set utf8 collate utf8_unicode_ci NOT NULL,
+  `accepted` int(11) NOT NULL default '0',
+  `submissions` int(11) NOT NULL default '0',
+  `special_judge` tinyint(1) NOT NULL default '0',
+  `has_framework` tinyint(1) NOT NULL default '0',
+  `author` varchar(50) character set utf8 collate utf8_unicode_ci NOT NULL,
+  `hint` text character set utf8 collate utf8_unicode_ci NOT NULL,
+  `avail` tinyint(4) NOT NULL default '1',
+  `cid` int(11) NOT NULL default '0',
+  `rate_tot` int(11) NOT NULL default '0',
+  `rate_count` int(11) NOT NULL default '0',
+  `dataversion` int(11) NOT NULL default '0',
+  `stdsid` int(11) NOT NULL,
+  PRIMARY KEY  (`pid`),
+  KEY `avail` (`avail`),
+  KEY `cid` (`cid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 PACK_KEYS=1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `queue`
+--
+
+DROP TABLE IF EXISTS `queue`;
+CREATE TABLE IF NOT EXISTS `queue` (
+  `qid` int(11) NOT NULL auto_increment,
+  `sid` int(11) NOT NULL default '0',
+  `hold` tinyint(4) NOT NULL default '0',
+  `server_id` int(4) NOT NULL default '0',
+  `cid` int(11) NOT NULL default '0',
+  `cpid` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`qid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `ranklist`
+--
+
+DROP TABLE IF EXISTS `ranklist`;
+CREATE TABLE IF NOT EXISTS `ranklist` (
+  `cid` int(11) NOT NULL default '0',
+  `uid` int(11) NOT NULL default '0',
+  `pid` int(11) NOT NULL default '0',
+  `accepted` int(11) NOT NULL default '0',
+  `submissions` int(11) NOT NULL default '1',
+  `ac_time` int(11) NOT NULL default '0',
+  KEY `cid` (`cid`),
+  KEY `cid_2` (`cid`,`uid`,`pid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `rating`
+--
+
+DROP TABLE IF EXISTS `rating`;
+CREATE TABLE IF NOT EXISTS `rating` (
+  `uid` int(11) NOT NULL default '0',
+  `pid` int(11) NOT NULL default '0',
+  `rate` int(3) NOT NULL default '0',
+  KEY `uid` (`uid`,`pid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `registration`
+--
+
+DROP TABLE IF EXISTS `registration`;
+CREATE TABLE IF NOT EXISTS `registration` (
+  `uid` int(11) NOT NULL,
+  `cid` int(11) NOT NULL,
+  `restrict_ip` varchar(16) character set utf8 collate utf8_unicode_ci NOT NULL,
+  PRIMARY KEY  (`uid`,`cid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Relationship between user and contest';
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `sicilychan`
+--
+
+DROP TABLE IF EXISTS `sicilychan`;
+CREATE TABLE IF NOT EXISTS `sicilychan` (
+  `talk_id` int(11) NOT NULL auto_increment,
+  `content` text NOT NULL,
+  `avail` tinyint(1) NOT NULL default '1',
+  PRIMARY KEY  (`talk_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `status`
+--
+
+DROP TABLE IF EXISTS `status`;
+CREATE TABLE IF NOT EXISTS `status` (
+  `sid` int(11) NOT NULL auto_increment,
+  `uid` int(11) NOT NULL default '0',
+  `pid` int(11) NOT NULL default '0',
+  `language` enum('C','C++','Pascal','Java') character set utf8 collate utf8_unicode_ci NOT NULL default 'C',
+  `status` enum('Judging','Compiling','Waiting','Running','Accepted','Wrong Answer','Compile Error','Runtime Error','Time Limit Exceeded','Memory Limit Exceeded','Output Limit Exceeded','Presentation Error','Restrict Function','Out of Contest Time','Other') character set utf8 collate utf8_unicode_ci NOT NULL default 'Waiting',
+  `run_time` float NOT NULL default '0',
+  `run_memory` int(11) NOT NULL default '0',
+  `time` datetime NOT NULL default '0000-00-00 00:00:00',
+  `failcase` int(11) NOT NULL default '-1',
+  `contest` int(11) NOT NULL default '0',
+  `codelength` int(11) default '0',
+  `public` int(2) NOT NULL default '0',
+  `sourcecode` text NOT NULL,
+  `compilelog` text NOT NULL,
+  PRIMARY KEY  (`sid`),
+  KEY `pid` (`pid`),
+  KEY `uid` (`uid`),
+  KEY `uid_2` (`uid`,`status`),
+  KEY `contest` (`contest`),
+  KEY `uid_3` (`uid`,`contest`),
+  KEY `pid_2` (`pid`,`status`),
+  KEY `status` (`status`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `tasklist`
+--
+
+DROP TABLE IF EXISTS `tasklist`;
+CREATE TABLE IF NOT EXISTS `tasklist` (
+  `id` int(11) NOT NULL auto_increment,
+  `status_id` int(11) NOT NULL,
+  `lasttime` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  `judge_id` int(11) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE IF NOT EXISTS `user` (
+  `uid` int(11) NOT NULL auto_increment,
+  `username` varchar(30) character set utf8 collate utf8_unicode_ci NOT NULL,
+  `password` varchar(20) character set utf8 collate utf8_unicode_ci NOT NULL default '',
+  `email` varchar(30) character set utf8 collate utf8_unicode_ci NOT NULL default '',
+  `address` varchar(50) character set utf8 collate utf8_unicode_ci NOT NULL default '',
+  `solved` int(10) unsigned NOT NULL default '0',
+  `submissions` int(10) unsigned NOT NULL default '0',
+  `reg_time` datetime NOT NULL default '0000-00-00 00:00:00',
+  `list` blob NOT NULL,
+  `perm` set('admin','user','manager','temp') character set utf8 collate utf8_unicode_ci NOT NULL default 'user',
+  `phone` varchar(50) character set utf8 collate utf8_unicode_ci NOT NULL,
+  `netid` varchar(20) character set utf8 collate utf8_unicode_ci NOT NULL,
+  `applynetid` varchar(10) character set utf8 collate utf8_unicode_ci NOT NULL,
+  `authcode` varchar(10) character set utf8 collate utf8_unicode_ci NOT NULL,
+  `authtime` int(11) NOT NULL,
+  `nickname` varchar(20) NOT NULL,
+  `signature` varchar(150) NOT NULL,
+  `cn_name` varchar(20) NOT NULL,
+  `en_name` varchar(20) NOT NULL,
+  `gender` varchar(2) NOT NULL,
+  `major` varchar(50) NOT NULL,
+  `grade` int(11) default NULL,
+  `class` varchar(10) NOT NULL,
+  `student_id` varchar(10) NOT NULL,
+  PRIMARY KEY  (`uid`),
+  KEY `username` (`username`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 PACK_KEYS=1 AUTO_INCREMENT=1 ;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+INSERT INTO  `user` (
+`uid` ,
+`username` ,
+`password` ,
+`email` ,
+`address` ,
+`solved` ,
+`submissions` ,
+`reg_time` ,
+`perm` ,
+`phone` ,
+`netid` ,
+`applynetid` ,
+`authcode` ,
+`authtime` ,
+`nickname` ,
+`signature`
+)
+VALUES (
+NULL ,  'root', MD5(  'admin' ) ,  'admin@soj.me',  'Heaven',  '0',  '0',  '0000-00-00 00:00:00',  'admin,user,manager', '' ,  '',  '',  '',  '',  'Admin', 'I am the god'
+);

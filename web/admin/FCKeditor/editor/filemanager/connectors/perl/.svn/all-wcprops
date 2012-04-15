@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sicily/!svn/ver/1/trunk/web/admin/FCKeditor/editor/filemanager/connectors/perl
+END
+config.pl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sicily/!svn/ver/1/trunk/web/admin/FCKeditor/editor/filemanager/connectors/perl/config.pl
+END
+io.pl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sicily/!svn/ver/1/trunk/web/admin/FCKeditor/editor/filemanager/connectors/perl/io.pl
+END
+upload_fck.pl
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sicily/!svn/ver/1/trunk/web/admin/FCKeditor/editor/filemanager/connectors/perl/upload_fck.pl
+END
+basexml.pl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sicily/!svn/ver/1/trunk/web/admin/FCKeditor/editor/filemanager/connectors/perl/basexml.pl
+END
+upload.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sicily/!svn/ver/1/trunk/web/admin/FCKeditor/editor/filemanager/connectors/perl/upload.cgi
+END
+util.pl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sicily/!svn/ver/1/trunk/web/admin/FCKeditor/editor/filemanager/connectors/perl/util.pl
+END
+commands.pl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sicily/!svn/ver/1/trunk/web/admin/FCKeditor/editor/filemanager/connectors/perl/commands.pl
+END
+connector.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sicily/!svn/ver/1/trunk/web/admin/FCKeditor/editor/filemanager/connectors/perl/connector.cgi
+END

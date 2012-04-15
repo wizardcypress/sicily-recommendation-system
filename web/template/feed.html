@@ -1,0 +1,202 @@
+<link type="text/css" rel="stylesheet" href="css/feed.css" />
+
+<script type="text/javascript">
+    function feed_reply(login_uid, fid) {
+        var wrap = $("#rc-"+fid);
+        var rform = $("#reply-"+fid);
+        var cform =  $("#comment-"+fid); 
+    
+        if(cform.is(":visible")) {
+            cform.hide();
+            rform.show();
+            return ;
+        }
+        if(wrap.is(":visible")) {
+            wrap.hide();
+            rform.hide();
+            cform.hide();
+        } else {
+            wrap.show();
+            cform.hide();
+            rform.show();
+        }
+    }
+
+function show_comment(login_uid, fid)
+{
+    var comment_wrap = $("#show-comment-"+fid);
+    comment_wrap.html("");
+    $.getJSON("/fast_json.php?mod=feed&func=get_comment&fid="+fid, function(resp) {
+            template = "<div class='comment-wrap'>  \
+            <div class='comment-header'><a href='/user.php?id=$uid' class='hord_link username'>$username</a> - <div class='addition-info'>$time</div> </div>\
+            <div class='comment-content'> $content </div>\
+            </div>";
+
+            for(i=0; i<resp.length; i++)
+            {
+                text = template; 
+                text = text.replace('$uid', resp[i].uid);
+                text = text.replace('$username', resp[i].username);
+                text = text.replace('$content', resp[i].content);
+                text = text.replace('$time', resp[i].time); 
+                comment_wrap.append(text);
+            }
+    });
+}
+function feed_comment(login_uid, fid) {
+    var wrap = $("#rc-"+fid);
+    var rform = $("#reply-"+fid);
+    var cform =  $("#comment-"+fid); 
+
+    if(rform.is(":visible")) {
+        rform.hide();
+        cform.show();
+        show_comment(login_uid, fid);
+        return ;
+    }
+    if(wrap.is(":visible")) {
+        wrap.hide();
+        rform.hide();
+        cform.hide();
+    } else {
+        wrap.show();
+        rform.hide();
+        cform.show();
+        show_comment(login_uid, fid);
+    }
+}
+
+function feed_delete(fid) {
+    var feed_wrap = $('#feed-wrap-'+fid);
+    $.getJSON("/fast_json.php?mod=feed&func=del_feed&fid="+fid, function(data) {
+            if(data.success == 1) {
+                feed_wrap.hide();
+            }
+    });
+}
+
+function show_msg()
+{
+    var n = $("#notify");
+    if(n.length == 0) {
+        n = $('<div>');
+        n.attr('id', 'notify'); 
+        n.appendTo("#msg-dialog");
+    }
+    
+    $.getJSON('/fast_json.php?mod=feed&func=get_msg', function(data) {
+            if(data.success == 1) {
+                n.html(data.content);
+                n.show();
+                n.attr("style", "display: inline;");
+                n.click(function() {$(this).fadeOut();});
+            } else n.hide();
+    });
+}
+
+</script>
+
+<div id="content-column">
+
+    <div id="problem-recommend">
+        <h1>你可能感兴趣的题目</h1>
+        <table class="prob-recom">
+            <thead>
+                <th>题目</th>
+                <th>AC率</th>
+                <th>相关用户</th>
+            </thead>
+        {% for prob in probs %}
+            <tr class="prob-recom-wrap">
+                <td><a href="/problem.php?pid={{prob.problem.pid}}">{{ prob.problem.pid }}</a></td>
+                    <td>{{prob.problem.accepted}}/{{prob.problem.submissions}}</td>
+                <td class="prob-solver-wrap"> 
+                {% if prob.solver.0 %} 
+                    {% for s in prob.solver %}
+                    {{ s.username }}
+                    {% endfor %}
+                {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </table>
+
+    <h1>近期热题: </h1>
+        <table>
+            {% for prob in hotprobs %}
+            <tr><td><a href="/problem.php?pid={{prob.0}}">{{ prob.0 }}</a></td> <td>{{ prob.1 }} °C</td></tr>
+            {% endfor %}
+        </table>
+    </div>
+    
+    <div id="main-feed">
+        <h1></h1>
+        <form method="POST" actioin="feed.php">
+            <textarea name="content" id="content-area" rows="8" cols="55"></textarea>
+            <input type="hidden" name="feed" value="feed"/>
+            <div style="clear:both"></div>
+             <input type="submit" class="hord_button hord_theme_blue feed-post-button" value="发表"/>   
+         </form>
+    <div style="clear:both"></div>
+        <div id="feed-column">
+            {% for feed in feeds %}
+            <div class="feed-wrap" id="feed-wrap-{{ feed.fid }}">
+                <div class="feed-header"><a href="/user.php?id={{ feed.uid }} class="hord_link username">{{ feed.username}}</a> <div class="addition-info"> - {{ feed.time }} {% if feed.uid == login_uid %}
+                        <a href="javascript:void(0)" id="delete-x-{{ feed.fid }}" onclick="feed_delete({{ feed.fid }})">X</a>{% endif %} </div></div>           <div class="feed-content">{{ feed.content }} </div>
+                <div class="reply-comment"> 
+                     <a href="javascript:void(0)"       onclick="feed_reply({{login_uid}}, {{ feed.fid }})">转发({{ feed.reply }})</a>   <a href="javascript:void(0)" onclick="feed_comment({{login_uid}}, {{ feed.fid }})">评论({{ feed.comment }})</a></div><div class="rc-form-wrap" id="rc-{{ feed.fid }}" style="display: none"><div id="reply-{{ feed.fid }}" style="display: none">
+                            <form id="reply-form-{{ feed.fid }}" action="feed.php" method="POST"><div class="reply-comment-notice">转发：</div>
+<textarea name="reply-content" class="reply-comment-area" rows="4" cols="51"></textarea><input type="hidden" name="reply-fid" value="{{ feed.fid }}"/>
+<input type="submit" class="hord_button hord_theme_blue feed-post-button" value="转发"/></form></div>        <div id="comment-{{ feed.fid }}" style="display: none"><form id="comment-form-{{ feed.fid }}" action="feed.php" method="POST"><div class="reply-comment-notice">评论：</div>
+<textarea name="comment-content" class="reply-comment-area" rows="4" cols="51"></textarea><input type="hidden" name="comment-fid" value="{{ feed.fid }}"/>
+<input type="submit" class="hord_button hord_theme_blue feed-post-button" value="发表"/>
+                        <div id="show-comment-{{ feed.fid }}"></div></form></div></div>
+            </div>
+            {% endfor %}
+            <div id="page-direct">
+                {% for page in allPages %}
+                {% if page != curPage %}
+                <a href="/feed.php?page={{ page }}">{{ page }}</a>
+                {% else %}
+                {{ page }}
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <div id="user-recommend">
+        <h1>推荐用户</h1>
+        <div>
+            <table>
+                <th>用户</th><th>共同好友</th>
+            {% for u in recom_users %}
+            <tr>
+                <td><a href="/user.php?id={{ u.user.uid }}">{{ u.user.username }}</a></td> <td> ({% for c in u.common %}{{c.username }} {% endfor %}) <br/></td>
+            </tr>
+            {% endfor %}
+            </table>
+        </div>
+        <h1>我关注的人：</h1>
+        <table>
+            <thead>
+                <th>用户</th><th>AC数</th><th>最近做题</th>
+            </thead>
+            <tbody>
+            {% for user in ifollow %}
+            <tr>
+                <td><a href="/user.php?id={{ user.uid }}">{{ user.username }} </a></td>
+                <td>{{ user.solved }}</td> 
+                <td> 
+                    {% for p in user.touch %}
+                    <a href="/problem.php?pid={{ p.pid }}">{{ p.pid }}({{ p.count }})</a> 
+                    {% endfor %}
+                </td>
+            </tr>
+            </tbody>
+        {% endfor %}
+        </table>
+    </div>
+
+</div>
+

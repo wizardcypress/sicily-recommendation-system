@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/sicily/!svn/ver/715/trunk/judge
+END
+judge.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sicily/!svn/ver/715/trunk/judge/judge.c
+END
+judge.conf.sample
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sicily/!svn/ver/711/trunk/judge/judge.conf.sample
+END
+execute.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sicily/!svn/ver/714/trunk/judge/execute.c
+END
+config.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sicily/!svn/ver/711/trunk/judge/config.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sicily/!svn/ver/712/trunk/judge/Makefile
+END
+.dep.inc
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sicily/!svn/ver/711/trunk/judge/.dep.inc
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/sicily/!svn/ver/885/trunk/web/helper
+END
+validation.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sicily/!svn/ver/874/trunk/web/helper/validation.php
+END
+misc.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sicily/!svn/ver/836/trunk/web/helper/misc.php
+END
+template.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sicily/!svn/ver/885/trunk/web/helper/template.php
+END
+contest.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sicily/!svn/ver/836/trunk/web/helper/contest.php
+END
+source.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sicily/!svn/ver/836/trunk/web/helper/source.php
+END
+url.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sicily/!svn/ver/871/trunk/web/helper/url.php
+END
+notification.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sicily/!svn/ver/836/trunk/web/helper/notification.php
+END
+permission.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sicily/!svn/ver/872/trunk/web/helper/permission.php
+END

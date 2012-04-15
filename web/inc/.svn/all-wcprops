@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/sicily/!svn/ver/874/trunk/web/inc
+END
+email_template.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sicily/!svn/ver/772/trunk/web/inc/email_template.inc.php
+END
+dataobj.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sicily/!svn/ver/874/trunk/web/inc/dataobj.inc.php
+END
+config.inc.php.sample
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sicily/!svn/ver/836/trunk/web/inc/config.inc.php.sample
+END
+search.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sicily/!svn/ver/859/trunk/web/inc/search.inc.php
+END
+lib.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sicily/!svn/ver/836/trunk/web/inc/lib.inc.php
+END
+conn.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sicily/!svn/ver/836/trunk/web/inc/conn.inc.php
+END
+user.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sicily/!svn/ver/837/trunk/web/inc/user.inc.php
+END
+contest.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sicily/!svn/ver/851/trunk/web/inc/contest.inc.php
+END
+global.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sicily/!svn/ver/836/trunk/web/inc/global.inc.php
+END

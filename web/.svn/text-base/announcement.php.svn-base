@@ -1,0 +1,1 @@
+<?= create_link(_("当当当！2011年新手赛预选赛Warm Up，12月3日晚上7点半准时开赛啦！"), "http://soj.me/contest_detail.php?cid=452") ?>

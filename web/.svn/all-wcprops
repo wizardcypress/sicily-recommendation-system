@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/sicily/!svn/ver/895/trunk/web
+END
+announcement.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sicily/!svn/ver/895/trunk/web/announcement.php
+END
+viewsource.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sicily/!svn/ver/803/trunk/web/viewsource.php
+END
+netid_authorize.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sicily/!svn/ver/772/trunk/web/netid_authorize.php
+END
+route.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sicily/!svn/ver/836/trunk/web/route.php
+END
+footer.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sicily/!svn/ver/880/trunk/web/footer.php
+END
+netid_bind.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sicily/!svn/ver/756/trunk/web/netid_bind.php
+END
+problem.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sicily/!svn/ver/885/trunk/web/problem.php
+END
+show_problem.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sicily/!svn/ver/872/trunk/web/show_problem.php
+END
+genText.sh
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sicily/!svn/ver/680/trunk/web/genText.sh
+END
+contest_password.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sicily/!svn/ver/788/trunk/web/contest_password.php
+END
+netid_unbind.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sicily/!svn/ver/756/trunk/web/netid_unbind.php
+END
+submit.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sicily/!svn/ver/828/trunk/web/submit.php
+END
+problem_status.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sicily/!svn/ver/836/trunk/web/problem_status.php
+END
+search.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sicily/!svn/ver/772/trunk/web/search.php
+END
+query.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sicily/!svn/ver/772/trunk/web/query.php
+END
+profile_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sicily/!svn/ver/836/trunk/web/profile_edit.php
+END
+netid_bind_email.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sicily/!svn/ver/756/trunk/web/netid_bind_email.php
+END
+standing.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sicily/!svn/ver/823/trunk/web/standing.php
+END
+faq.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/sicily/!svn/ver/772/trunk/web/faq.php
+END
+login.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sicily/!svn/ver/892/trunk/web/login.php
+END
+json.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/sicily/!svn/ver/852/trunk/web/json.php
+END
+compileText.sh
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sicily/!svn/ver/680/trunk/web/compileText.sh
+END
+profile_forgetpwd.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sicily/!svn/ver/881/trunk/web/profile_forgetpwd.php
+END
+problems.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sicily/!svn/ver/772/trunk/web/problems.php
+END
+post.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/sicily/!svn/ver/886/trunk/web/post.php
+END
+profile_chpwd.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sicily/!svn/ver/788/trunk/web/profile_chpwd.php
+END
+problem_tab.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sicily/!svn/ver/861/trunk/web/problem_tab.php
+END
+problem_data.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sicily/!svn/ver/772/trunk/web/problem_data.php
+END
+standing_full.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sicily/!svn/ver/772/trunk/web/standing_full.php
+END
+problem_list.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sicily/!svn/ver/804/trunk/web/problem_list.php
+END
+wxyz_problem_list.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sicily/!svn/ver/861/trunk/web/wxyz_problem_list.php
+END
+navigation.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sicily/!svn/ver/873/trunk/web/navigation.php
+END
+contest_detail.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sicily/!svn/ver/872/trunk/web/contest_detail.php
+END
+contests.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sicily/!svn/ver/788/trunk/web/contests.php
+END
+course_register.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sicily/!svn/ver/874/trunk/web/course_register.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/sicily/!svn/ver/891/trunk/web/index.php
+END
+cindex.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sicily/!svn/ver/772/trunk/web/cindex.php
+END
+action.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sicily/!svn/ver/831/trunk/web/action.php
+END
+user.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/sicily/!svn/ver/791/trunk/web/user.php
+END
+process.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sicily/!svn/ver/836/trunk/web/process.php
+END
+usercmp.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sicily/!svn/ver/772/trunk/web/usercmp.php
+END
+sharecodes.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sicily/!svn/ver/861/trunk/web/sharecodes.php
+END
+export.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sicily/!svn/ver/807/trunk/web/export.php
+END
+course_detail.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sicily/!svn/ver/874/trunk/web/course_detail.php
+END
+status.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/sicily/!svn/ver/828/trunk/web/status.php
+END
+courses.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/sicily/!svn/ver/774/trunk/web/courses.php
+END
+register.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sicily/!svn/ver/788/trunk/web/register.php
+END
+fast_json.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sicily/!svn/ver/859/trunk/web/fast_json.php
+END
+ranklist.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sicily/!svn/ver/859/trunk/web/ranklist.php
+END
+compileresult.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sicily/!svn/ver/772/trunk/web/compileresult.php
+END
+post_market.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sicily/!svn/ver/886/trunk/web/post_market.php
+END
+profile_login.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sicily/!svn/ver/788/trunk/web/profile_login.php
+END

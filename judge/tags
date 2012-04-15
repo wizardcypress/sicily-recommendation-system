@@ -1,0 +1,188 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALLCONFS	nbproject/Makefile-impl.mk	/^ALLCONFS=Debug Release $/;"	m
+ARG_LEN	config.c	9;"	d	file:
+AS	nbproject/Makefile-Debug.mk	/^AS=as$/;"	m
+AS	nbproject/Makefile-Release.mk	/^AS=as$/;"	m
+ASFLAGS	nbproject/Makefile-Debug.mk	/^ASFLAGS=$/;"	m
+ASFLAGS	nbproject/Makefile-Release.mk	/^ASFLAGS=$/;"	m
+BASICOPTS	Makefile	/^BASICOPTS = -g$/;"	m
+BUILD_SUBPROJECTS	nbproject/Makefile-impl.mk	/^BUILD_SUBPROJECTS=${BUILD_SUBPROJECTS_${SUBPROJECTS}}$/;"	m
+BUILD_SUBPROJECTS_	nbproject/Makefile-impl.mk	/^BUILD_SUBPROJECTS_=.build-subprojects$/;"	m
+BUILD_SUBPROJECTS_NO	nbproject/Makefile-impl.mk	/^BUILD_SUBPROJECTS_NO=$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CC	nbproject/Makefile-Debug.mk	/^CC=gcc$/;"	m
+CC	nbproject/Makefile-Release.mk	/^CC=gcc$/;"	m
+CCADMIN	nbproject/Makefile-Debug.mk	/^CCADMIN=CCadmin$/;"	m
+CCADMIN	nbproject/Makefile-Release.mk	/^CCADMIN=CCadmin$/;"	m
+CCC	nbproject/Makefile-Debug.mk	/^CCC=g++$/;"	m
+CCC	nbproject/Makefile-Release.mk	/^CCC=g++$/;"	m
+CCFLAGS	nbproject/Makefile-Debug.mk	/^CCFLAGS=$/;"	m
+CCFLAGS	nbproject/Makefile-Release.mk	/^CCFLAGS=$/;"	m
+CFLAGS	Makefile	/^CFLAGS = $(BASICOPTS)$/;"	m
+CFLAGS	nbproject/Makefile-Debug.mk	/^CFLAGS=-lmysqlclient$/;"	m
+CFLAGS	nbproject/Makefile-Release.mk	/^CFLAGS=$/;"	m
+CLEAN_SUBPROJECTS	nbproject/Makefile-impl.mk	/^CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}$/;"	m
+CLEAN_SUBPROJECTS_	nbproject/Makefile-impl.mk	/^CLEAN_SUBPROJECTS_=.clean-subprojects$/;"	m
+CLEAN_SUBPROJECTS_NO	nbproject/Makefile-impl.mk	/^CLEAN_SUBPROJECTS_NO=$/;"	m
+CND_ARTIFACT_DIR_Debug	nbproject/Makefile-variables.mk	/^CND_ARTIFACT_DIR_Debug=dist\/Debug\/GNU-Linux-x86$/;"	m
+CND_ARTIFACT_DIR_Release	nbproject/Makefile-variables.mk	/^CND_ARTIFACT_DIR_Release=dist\/Release\/GNU-Linux-x86$/;"	m
+CND_ARTIFACT_NAME_Debug	nbproject/Makefile-variables.mk	/^CND_ARTIFACT_NAME_Debug=judge$/;"	m
+CND_ARTIFACT_NAME_Release	nbproject/Makefile-variables.mk	/^CND_ARTIFACT_NAME_Release=judge$/;"	m
+CND_ARTIFACT_PATH_Debug	nbproject/Makefile-variables.mk	/^CND_ARTIFACT_PATH_Debug=dist\/Debug\/GNU-Linux-x86\/judge$/;"	m
+CND_ARTIFACT_PATH_Release	nbproject/Makefile-variables.mk	/^CND_ARTIFACT_PATH_Release=dist\/Release\/GNU-Linux-x86\/judge$/;"	m
+CND_BASEDIR	nbproject/Makefile-variables.mk	/^CND_BASEDIR=`pwd`$/;"	m
+CND_BUILDDIR	nbproject/Makefile-variables.mk	/^CND_BUILDDIR=build$/;"	m
+CND_CONF	nbproject/Makefile-Debug.mk	/^CND_CONF=Debug$/;"	m
+CND_CONF	nbproject/Makefile-Release.mk	/^CND_CONF=Release$/;"	m
+CND_DISTDIR	nbproject/Makefile-Debug.mk	/^CND_DISTDIR=dist$/;"	m
+CND_DISTDIR	nbproject/Makefile-Release.mk	/^CND_DISTDIR=dist$/;"	m
+CND_DISTDIR	nbproject/Makefile-variables.mk	/^CND_DISTDIR=dist$/;"	m
+CND_PACKAGE_DIR_Debug	nbproject/Makefile-variables.mk	/^CND_PACKAGE_DIR_Debug=dist\/Debug\/GNU-Linux-x86\/package$/;"	m
+CND_PACKAGE_DIR_Release	nbproject/Makefile-variables.mk	/^CND_PACKAGE_DIR_Release=dist\/Release\/GNU-Linux-x86\/package$/;"	m
+CND_PACKAGE_NAME_Debug	nbproject/Makefile-variables.mk	/^CND_PACKAGE_NAME_Debug=judge.tar$/;"	m
+CND_PACKAGE_NAME_Release	nbproject/Makefile-variables.mk	/^CND_PACKAGE_NAME_Release=judge.tar$/;"	m
+CND_PACKAGE_PATH_Debug	nbproject/Makefile-variables.mk	/^CND_PACKAGE_PATH_Debug=dist\/Debug\/GNU-Linux-x86\/package\/judge.tar$/;"	m
+CND_PACKAGE_PATH_Release	nbproject/Makefile-variables.mk	/^CND_PACKAGE_PATH_Release=dist\/Release\/GNU-Linux-x86\/package\/judge.tar$/;"	m
+CND_PLATFORM	nbproject/Makefile-Debug.mk	/^CND_PLATFORM=GNU-Linux-x86$/;"	m
+CND_PLATFORM	nbproject/Makefile-Release.mk	/^CND_PLATFORM=GNU-Linux-x86$/;"	m
+CND_PLATFORM_Debug	nbproject/Makefile-variables.mk	/^CND_PLATFORM_Debug=GNU-Linux-x86$/;"	m
+CND_PLATFORM_Release	nbproject/Makefile-variables.mk	/^CND_PLATFORM_Release=GNU-Linux-x86$/;"	m
+CONF	nbproject/Makefile-impl.mk	/^CONF=${DEFAULTCONF}$/;"	m
+CP	nbproject/Makefile-Debug.mk	/^CP=cp$/;"	m
+CP	nbproject/Makefile-Release.mk	/^CP=cp$/;"	m
+CPPFLAGS_judge	Makefile	/^CPPFLAGS_judge = \\$/;"	m
+CXX	nbproject/Makefile-Debug.mk	/^CXX=g++$/;"	m
+CXX	nbproject/Makefile-Release.mk	/^CXX=g++$/;"	m
+CXXFLAGS	nbproject/Makefile-Debug.mk	/^CXXFLAGS=$/;"	m
+CXXFLAGS	nbproject/Makefile-Release.mk	/^CXXFLAGS=$/;"	m
+DATABASE	config.c	/^char DATABASE[ARG_LEN] ="sicily";$/;"	v
+DATA_PREFIX	config.c	/^char DATA_PREFIX[ARG_LEN] = "\/home\/sicily\/testdata";$/;"	v
+DEFAULTCONF	nbproject/Makefile-impl.mk	/^DEFAULTCONF=Debug$/;"	m
+DEPLIBS_judge	Makefile	/^DEPLIBS_judge =  $/;"	m
+EXENAME	judge.c	7;"	d	file:
+EXEPROG	judge.c	/^char          EXEPROG[100];$/;"	v
+FC	nbproject/Makefile-Debug.mk	/^FC=$/;"	m
+FC	nbproject/Makefile-Release.mk	/^FC=$/;"	m
+FFLAGS	nbproject/Makefile-Debug.mk	/^FFLAGS=$/;"	m
+FFLAGS	nbproject/Makefile-Release.mk	/^FFLAGS=$/;"	m
+GREP	nbproject/Makefile-Debug.mk	/^GREP=grep$/;"	m
+GREP	nbproject/Makefile-Release.mk	/^GREP=grep$/;"	m
+HELP_MSG	config.c	/^static const char HELP_MSG[] =$/;"	v	file:
+HOST	config.c	/^char HOST[ARG_LEN] =    "localhost";$/;"	v
+LDLIBSOPTIONS	nbproject/Makefile-Debug.mk	/^LDLIBSOPTIONS=$/;"	m
+LDLIBSOPTIONS	nbproject/Makefile-Release.mk	/^LDLIBSOPTIONS=$/;"	m
+LDLIBS_judge	Makefile	/^LDLIBS_judge = $(USERLIBS_judge)$/;"	m
+MAX	judge.c	28;"	d	file:
+MKDIR	nbproject/Makefile-Debug.mk	/^MKDIR=mkdir$/;"	m
+MKDIR	nbproject/Makefile-Release.mk	/^MKDIR=mkdir$/;"	m
+MySQL_res	judge.c	/^MYSQL_RES*    MySQL_res;$/;"	v
+MySQL_row	judge.c	/^MYSQL_ROW     MySQL_row;$/;"	v
+NM	nbproject/Makefile-Debug.mk	/^NM=nm$/;"	m
+NM	nbproject/Makefile-Release.mk	/^NM=nm$/;"	m
+OBJECTDIR	nbproject/Makefile-Debug.mk	/^OBJECTDIR=build\/${CND_CONF}\/${CND_PLATFORM}$/;"	m
+OBJECTDIR	nbproject/Makefile-Release.mk	/^OBJECTDIR=build\/${CND_CONF}\/${CND_PLATFORM}$/;"	m
+OBJECTFILES	nbproject/Makefile-Debug.mk	/^OBJECTFILES= \\$/;"	m
+OBJECTFILES	nbproject/Makefile-Release.mk	/^OBJECTFILES= \\$/;"	m
+OBJS_judge	Makefile	/^OBJS_judge =  \\$/;"	m
+PASSWD	config.c	/^char PASSWD[ARG_LEN] =	"";$/;"	v
+PROJECTNAME	nbproject/Makefile-impl.mk	/^PROJECTNAME=judge$/;"	m
+RANLIB	nbproject/Makefile-Debug.mk	/^RANLIB=ranlib$/;"	m
+RANLIB	nbproject/Makefile-Release.mk	/^RANLIB=ranlib$/;"	m
+SERVER_ID	config.c	/^int SERVER_ID = 0;$/;"	v
+SRC_PREFIX	config.c	/^char SRC_PREFIX[ARG_LEN] = "\/home\/sicily\/source";$/;"	v
+SUBPROJECTS	nbproject/Makefile-impl.mk	/^SUBPROJECTS=${SUB_${SUB}}$/;"	m
+SUB_no	nbproject/Makefile-impl.mk	/^SUB_no=NO$/;"	m
+SYSLIBS_judge	Makefile	/^SYSLIBS_judge = -lmysqlclient$/;"	m
+TARGETDIR_judge	Makefile	/^TARGETDIR_judge=bin$/;"	m
+USER	config.c	/^char USER[ARG_LEN] =	"";$/;"	v
+USERLIBS_judge	Makefile	/^USERLIBS_judge = $(SYSLIBS_judge) $/;"	m
+WORKDIR	judge.c	/^char          WORKDIR[100];$/;"	v
+__EXECUTE_C__	execute.c	2;"	d	file:
+argname	config.c	/^	char *argname;$/;"	m	struct:conf_strings_t	file:
+case_index	judge.c	/^FILE* case_index;$/;"	v
+ccmd	include/config.h	/^	char *ccmd;$/;"	m	struct:lang_t
+ccmd	judge.c	/^char*         language, *compiler, *ext, *ccmd;$/;"	v
+checkReturnCode	nbproject/Package-Debug.bash	/^function checkReturnCode$/;"	f
+checkReturnCode	nbproject/Package-Release.bash	/^function checkReturnCode$/;"	f
+check_multiple_case	judge.c	/^void check_multiple_case(FILE *inf)$/;"	f
+cid	judge.c	/^unsigned long status_id, problem_id, cproblem_id, user_id, cid, qid, current_case;$/;"	v
+cleanup	judge.c	/^void cleanup()$/;"	f
+clear	judge.c	/^void clear()$/;"	f
+clear_runstat	judge.c	/^void clear_runstat()$/;"	f
+compile	judge.c	/^int compile(char *srcpath)$/;"	f
+compile_framework	judge.c	/^int compile_framework(char *srcpath)$/;"	f
+compile_java	judge.c	/^int compile_java(char *srcpath)$/;"	f
+compile_log	judge.c	/^char          compile_log[100000] = "";$/;"	v
+compile_normal	judge.c	/^int compile_normal(char *srcpath)$/;"	f
+compiler	include/config.h	/^	char *compiler;$/;"	m	struct:lang_t
+compiler	judge.c	/^char*         language, *compiler, *ext, *ccmd;$/;"	v
+conf_strings	config.c	/^} conf_strings[] = {$/;"	v	typeref:struct:conf_strings_t	file:
+conf_strings_t	config.c	/^static const struct conf_strings_t {$/;"	s	file:
+contest_end_time	judge.c	/^time_t        contest_start_time, contest_end_time, submit_time;$/;"	v
+contest_start_time	judge.c	/^time_t        contest_start_time, contest_end_time, submit_time;$/;"	v
+copyFileToTmpDir	nbproject/Package-Debug.bash	/^function copyFileToTmpDir$/;"	f
+copyFileToTmpDir	nbproject/Package-Release.bash	/^function copyFileToTmpDir$/;"	f
+cproblem_id	judge.c	/^unsigned long status_id, problem_id, cproblem_id, user_id, cid, qid, current_case;$/;"	v
+current_case	judge.c	/^unsigned long status_id, problem_id, cproblem_id, user_id, cid, qid, current_case;$/;"	v
+diff	judge.c	/^int diff(char *file1, char *file2, int exact_match)$/;"	f
+do_judge	judge.c	/^void do_judge()$/;"	f
+end_testcase	judge.c	/^void end_testcase()$/;"	f
+execute	execute.c	/^int execute(const char *input_file_name, const char *output_file_name, const char *execute_file_name, int time_limit,$/;"	f
+exeprog	judge.c	/^char          exeprog[128];$/;"	v
+ext	include/config.h	/^	char *ext;$/;"	m	struct:lang_t
+ext	judge.c	/^char*         language, *compiler, *ext, *ccmd;$/;"	v
+f_stat	judge.c	/^struct stat *f_stat(char *file)$/;"	f
+fetch_queue	judge.c	/^int fetch_queue()$/;"	f
+fetch_row	judge.c	/^int fetch_row()$/;"	f
+file_exist	judge.c	39;"	d	file:
+file_size	judge.c	38;"	d	file:
+get_source	judge.c	/^void get_source(char *path)$/;"	f
+hMySQL	judge.c	/^MYSQL*        hMySQL;$/;"	v
+halt	judge.c	/^void halt(char *msg)$/;"	f
+has_framework	judge.c	/^int           special_judge, has_framework;$/;"	v
+init	judge.c	/^void init()$/;"	f
+init_testcase	judge.c	/^void init_testcase()$/;"	f
+isJava	include/execute.h	/^int isJava;$/;"	v
+is_multiple_cases	judge.c	/^char          is_multiple_cases;$/;"	v
+lang	config.c	/^const struct lang_t lang[] = {$/;"	v	typeref:struct:lang_t
+lang_t	include/config.h	/^struct lang_t$/;"	s
+language	include/config.h	/^	char *language;$/;"	m	struct:lang_t
+language	judge.c	/^char*         language, *compiler, *ext, *ccmd;$/;"	v
+lopts	config.c	/^static struct option lopts[] = {$/;"	v	typeref:struct:option	file:
+main	judge.c	/^int main(int argc, char **argv)$/;"	f
+makeDirectory	nbproject/Package-Debug.bash	/^function makeDirectory$/;"	f
+makeDirectory	nbproject/Package-Release.bash	/^function makeDirectory$/;"	f
+memory_limit	judge.c	/^unsigned long time_limit, memory_limit;$/;"	v
+p_error	judge.c	/^void p_error(MYSQL *mysql)$/;"	f
+parse_config	config.c	/^void parse_config(int argc, char **argv) {$/;"	f
+parse_file	config.c	/^static void parse_file(const char *filepath) {$/;"	f	file:
+popup_queue	judge.c	/^void popup_queue()$/;"	f
+problem_id	judge.c	/^unsigned long status_id, problem_id, cproblem_id, user_id, cid, qid, current_case;$/;"	v
+qid	judge.c	/^unsigned long status_id, problem_id, cproblem_id, user_id, cid, qid, current_case;$/;"	v
+query	judge.c	/^void query(char *fmt, ...)$/;"	f
+query_str	judge.c	/^char          query_str[100000];$/;"	v
+select_case	judge.c	/^int select_case(char *infile, char *outfile, char *stdfile)$/;"	f
+set_compilelog	judge.c	/^void set_compilelog(char *srcpath)$/;"	f
+set_data_path	judge.c	34;"	d	file:
+set_source_path	judge.c	30;"	d	file:
+set_status	judge.c	/^void set_status(const char *msg)$/;"	f
+signal_names	include/execute.h	/^char*(signal_names[32]) =$/;"	v
+sopts	config.c	/^static const char *sopts = "H:u:p:d:D:s:j:c:h";$/;"	v	file:
+special_judge	judge.c	/^int           special_judge, has_framework;$/;"	v
+spend_memory	judge.c	/^int           spend_memory;$/;"	v
+spend_time	judge.c	/^double        spend_time;$/;"	v
+sqllog	judge.c	/^char          sqllog[200001];$/;"	v
+srccode	judge.c	/^char          srccode[100000];$/;"	v
+status	config.c	/^const char status[][30] = {$/;"	v
+status_id	judge.c	/^unsigned long status_id, problem_id, cproblem_id, user_id, cid, qid, current_case;$/;"	v
+submit_time	judge.c	/^time_t        contest_start_time, contest_end_time, submit_time;$/;"	v
+syscall_names	include/execute.h	/^char*(syscall_names[256]) =$/;"	v
+time_limit	judge.c	/^unsigned long time_limit, memory_limit;$/;"	v
+update_user	judge.c	/^void update_user(int solved)$/;"	f
+user_id	judge.c	/^unsigned long status_id, problem_id, cproblem_id, user_id, cid, qid, current_case;$/;"	v
+val	config.c	/^	char *val;$/;"	m	struct:conf_strings_t	file:

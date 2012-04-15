@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/sicily/!svn/ver/874/trunk/web/admin
+END
+problem_list.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sicily/!svn/ver/861/trunk/web/admin/problem_list.php
+END
+navigation.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sicily/!svn/ver/772/trunk/web/admin/navigation.php
+END
+contest_detail.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sicily/!svn/ver/825/trunk/web/admin/contest_detail.php
+END
+users.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sicily/!svn/ver/772/trunk/web/admin/users.php
+END
+contests.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sicily/!svn/ver/825/trunk/web/admin/contests.php
+END
+contest_create.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sicily/!svn/ver/869/trunk/web/admin/contest_create.php
+END
+problem_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sicily/!svn/ver/825/trunk/web/admin/problem_edit.php
+END
+course_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sicily/!svn/ver/874/trunk/web/admin/course_edit.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sicily/!svn/ver/772/trunk/web/admin/index.php
+END
+import_user.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sicily/!svn/ver/821/trunk/web/admin/import_user.php
+END
+detectcheat.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sicily/!svn/ver/772/trunk/web/admin/detectcheat.php
+END
+process.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sicily/!svn/ver/874/trunk/web/admin/process.php
+END
+user.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sicily/!svn/ver/772/trunk/web/admin/user.php
+END
+course_detail.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sicily/!svn/ver/825/trunk/web/admin/course_detail.php
+END
+stdprogram.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sicily/!svn/ver/831/trunk/web/admin/stdprogram.php
+END
+problem_create.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sicily/!svn/ver/825/trunk/web/admin/problem_create.php
+END
+courses.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sicily/!svn/ver/780/trunk/web/admin/courses.php
+END
+course_create.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sicily/!svn/ver/874/trunk/web/admin/course_create.php
+END
+problems.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sicily/!svn/ver/772/trunk/web/admin/problems.php
+END
+status.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sicily/!svn/ver/772/trunk/web/admin/status.php
+END
+contest_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sicily/!svn/ver/866/trunk/web/admin/contest_edit.php
+END
+ranklist.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sicily/!svn/ver/772/trunk/web/admin/ranklist.php
+END

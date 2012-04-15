@@ -1,0 +1,6 @@
+Sicily is an online judge system.
+This modified program is to construct a recommendation system base on original judge system.
+The algorithm we use is simple but sufficient for our initial requirement. But  later we modified some parts to adjust to the explicity requirements.
+See README.cn.pdf for more information.
+
+

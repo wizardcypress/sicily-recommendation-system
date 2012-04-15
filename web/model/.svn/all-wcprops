@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/sicily/!svn/ver/871/trunk/web/model
+END
+PostRating.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sicily/!svn/ver/836/trunk/web/model/PostRating.php
+END
+Judge.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sicily/!svn/ver/871/trunk/web/model/Judge.php
+END
+User.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sicily/!svn/ver/835/trunk/web/model/User.php
+END
+Contest.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sicily/!svn/ver/835/trunk/web/model/Contest.php
+END
+Course.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sicily/!svn/ver/835/trunk/web/model/Course.php
+END
+Problem.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/sicily/!svn/ver/838/trunk/web/model/Problem.php
+END
+Status.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/sicily/!svn/ver/835/trunk/web/model/Status.php
+END
+Post.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sicily/!svn/ver/836/trunk/web/model/Post.php
+END
